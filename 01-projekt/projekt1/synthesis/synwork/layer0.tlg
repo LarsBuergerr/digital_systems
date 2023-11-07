@@ -1,0 +1,13 @@
+@N: CD231 :"C:\Microchip\Libero_SoC_v2023.2\SynplifyPro\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
+@N: CD630 :"C:\00digitalesysteme\01-projekt\Beispiel\Beispiel5.vhd":4:7:4:11|Synthesizing work.blink.verhalten.
+Post processing for work.blink.verhalten
+Running optimization stage 1 on blink .......
+Finished optimization stage 1 on blink (CPU Time 0h:00m:00s, Memory Used current: 93MB peak: 93MB)
+Running optimization stage 2 on blink .......
+Finished optimization stage 2 on blink (CPU Time 0h:00m:00s, Memory Used current: 92MB peak: 93MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\00digitalesysteme\01-projekt\projekt1\synthesis\synwork\layer0.duruntime
+
+

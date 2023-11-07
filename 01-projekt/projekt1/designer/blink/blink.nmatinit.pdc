@@ -1,0 +1,75 @@
+# Microchip Physical design constraints file
+
+# Version: 2023.2 2023.2.0.8
+
+# Design Name: blink 
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S005 , Package: 144 TQ , Speed grade: STD 
+
+# Date generated: Tue Nov  7 10:12:01 2023 
+
+
+#
+# I/O constraints
+#
+
+set_io clk -DIRECTION INPUT -pinname 24 -fixed no
+set_io led -DIRECTION OUTPUT -pinname 50 -fixed no
+set_io rst -DIRECTION INPUT -pinname 53 -fixed no
+
+#
+# Core cell constraints
+#
+
+set_location rst_ibuf_RNIUUM5 -fixed no 221 30
+set_location reg\[7\] -fixed no 157 4
+set_location rst_ibuf_RNIUUM5/U0_RGB1 -fixed no 218 3
+set_location reg\[4\] -fixed no 167 4
+set_location reg\[20\] -fixed no 136 4
+set_location p1.un2_reg_18 -fixed no 158 3
+set_location reg\[8\] -fixed no 146 4
+set_location clk_ibuf_RNIVTI2 -fixed no 219 30
+set_location p1.un2_reg_22 -fixed no 156 3
+set_location reg\[15\] -fixed no 150 4
+set_location reg\[3\] -fixed no 162 4
+set_location reg\[13\] -fixed no 149 4
+set_location p1.un2_reg_23 -fixed no 152 3
+set_location reg_10\[12\] -fixed no 159 3
+set_location reg\[21\] -fixed no 133 4
+set_location reg\[9\] -fixed no 145 4
+set_location p1.un2_reg_16 -fixed no 133 3
+set_location reg_10\[4\] -fixed no 167 3
+set_location reg\[5\] -fixed no 158 4
+set_location reg_10\[0\] -fixed no 164 3
+set_location p1.un2_reg_14 -fixed no 145 3
+set_location p1.un2_reg_13 -fixed no 163 3
+set_location reg\[18\] -fixed no 155 4
+set_location reg\[2\] -fixed no 165 4
+set_location reg\[14\] -fixed no 151 4
+set_location reg\[19\] -fixed no 147 4
+set_location reg\[22\] -fixed no 134 4
+set_location dff -fixed no 144 4
+set_location reg_10\[17\] -fixed no 154 3
+set_location reg\[16\] -fixed no 148 4
+set_location dff_0 -fixed no 144 3
+set_location reg_10\[1\] -fixed no 166 3
+set_location reg\[0\] -fixed no 164 4
+set_location reg_10\[6\] -fixed no 161 3
+set_location reg\[10\] -fixed no 153 4
+set_location reg\[1\] -fixed no 166 4
+set_location p1.un2_reg_17 -fixed no 162 3
+set_location reg\[6\] -fixed no 161 4
+set_location reg\[25\] -fixed no 156 4
+set_location p1.reg_9\[2\] -fixed no 165 3
+set_location reg\[23\] -fixed no 135 4
+set_location reg\[11\] -fixed no 160 4
+set_location p1.un2_reg_15 -fixed no 149 3
+set_location reg_10\[11\] -fixed no 160 3
+set_location clk_ibuf_RNIVTI2/U0_RGB1 -fixed no 219 3
+set_location reg_10\[19\] -fixed no 147 3
+set_location reg\[17\] -fixed no 154 4
+set_location reg\[12\] -fixed no 159 4
+set_location reg_10\[15\] -fixed no 150 3
+set_location reg\[24\] -fixed no 139 4

@@ -1,0 +1,517 @@
+--
+-- Written by Synopsys
+-- Product Version "T-2022.09M-SP2-1"
+-- Program "Synplify Pro", Mapper "map202209actsp2, Build 145R"
+-- Tue Nov  7 10:11:53 2023
+--
+
+--
+-- Written by Synplify Pro version Build 145R
+-- Tue Nov  7 10:11:53 2023
+--
+
+--
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+library synplify;
+use synplify.components.all;
+
+entity blink is
+port(
+  rst :  in std_logic;
+  clk :  in std_logic;
+  led :  out std_logic);
+end blink;
+
+architecture beh of blink is
+  signal REG : std_logic_vector(25 downto 0);
+  signal REG_10 : std_logic_vector(19 downto 0);
+  signal NN_1 : std_logic ;
+  signal NN_2 : std_logic ;
+  signal DFF_0 : std_logic ;
+  signal RST_C : std_logic ;
+  signal CLK_C : std_logic ;
+  signal LED_C : std_logic ;
+  signal \P1.UN2_REG_13\ : std_logic ;
+  signal \P1.UN2_REG_14\ : std_logic ;
+  signal \P1.UN2_REG_15\ : std_logic ;
+  signal \P1.UN2_REG_16\ : std_logic ;
+  signal \P1.UN2_REG_17\ : std_logic ;
+  signal \P1.UN2_REG_18\ : std_logic ;
+  signal \P1.UN2_REG_22\ : std_logic ;
+  signal \P1.UN2_REG_23\ : std_logic ;
+  signal CLK_IBUF : std_logic ;
+  signal RST_IBUF : std_logic ;
+begin
+RST_IBUF_RNIUUM5: CLKINT port map (
+    Y => RST_C,
+    A => RST_IBUF);
+CLK_IBUF_RNIVTI2: CLKINT port map (
+    Y => CLK_C,
+    A => CLK_IBUF);
+\REG[5]_Z59\: SLE port map (
+    Q => REG(5),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(4),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[4]_Z60\: SLE port map (
+    Q => REG(4),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(4),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[3]_Z61\: SLE port map (
+    Q => REG(3),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(2),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[2]_Z62\: SLE port map (
+    Q => REG(2),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(2),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[1]_Z63\: SLE port map (
+    Q => REG(1),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(1),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[0]_Z64\: SLE port map (
+    Q => REG(0),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(0),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+DFF: SLE port map (
+    Q => LED_C,
+    ADn => NN_1,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => DFF_0,
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[20]_Z66\: SLE port map (
+    Q => REG(20),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(19),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[19]_Z67\: SLE port map (
+    Q => REG(19),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(19),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[18]_Z68\: SLE port map (
+    Q => REG(18),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(17),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[17]_Z69\: SLE port map (
+    Q => REG(17),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(17),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[16]_Z70\: SLE port map (
+    Q => REG(16),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(15),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[15]_Z71\: SLE port map (
+    Q => REG(15),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(15),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[14]_Z72\: SLE port map (
+    Q => REG(14),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(13),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[13]_Z73\: SLE port map (
+    Q => REG(13),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(12),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[12]_Z74\: SLE port map (
+    Q => REG(12),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(12),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[11]_Z75\: SLE port map (
+    Q => REG(11),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(11),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[10]_Z76\: SLE port map (
+    Q => REG(10),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(9),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[9]_Z77\: SLE port map (
+    Q => REG(9),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(8),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[8]_Z78\: SLE port map (
+    Q => REG(8),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(7),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[7]_Z79\: SLE port map (
+    Q => REG(7),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(6),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[6]_Z80\: SLE port map (
+    Q => REG(6),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG_10(6),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[25]_Z81\: SLE port map (
+    Q => REG(25),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(24),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[24]_Z82\: SLE port map (
+    Q => REG(24),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(23),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[23]_Z83\: SLE port map (
+    Q => REG(23),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(22),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[22]_Z84\: SLE port map (
+    Q => REG(22),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(21),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+\REG[21]_Z85\: SLE port map (
+    Q => REG(21),
+    ADn => NN_2,
+    ALn => RST_C,
+    CLK => CLK_C,
+    D => REG(20),
+    EN => NN_1,
+    LAT => NN_2,
+    SD => NN_2,
+    SLn => NN_1);
+RST_IBUF_Z86: INBUF port map (
+  Y => RST_IBUF,
+  PAD => rst);
+CLK_IBUF_Z87: INBUF port map (
+  Y => CLK_IBUF,
+  PAD => clk);
+LED_OBUF: OUTBUF port map (
+  PAD => led,
+  D => LED_C);
+\P1.REG_9[2]\: CFG2 
+generic map(
+  INIT => X"6"
+)
+port map (
+  A => REG(25),
+  B => REG(1),
+  Y => REG_10(2));
+\P1.UN2_REG_18_Z90\: CFG4 
+generic map(
+  INIT => X"0001"
+)
+port map (
+  A => REG(14),
+  B => REG(11),
+  C => REG(10),
+  D => REG(5),
+  Y => \P1.UN2_REG_18\);
+\P1.UN2_REG_17_Z91\: CFG4 
+generic map(
+  INIT => X"0002"
+)
+port map (
+  A => REG(24),
+  B => REG(18),
+  C => REG(3),
+  D => REG(0),
+  Y => \P1.UN2_REG_17\);
+\P1.UN2_REG_16_Z92\: CFG4 
+generic map(
+  INIT => X"8000"
+)
+port map (
+  A => REG(23),
+  B => REG(22),
+  C => REG(21),
+  D => REG(20),
+  Y => \P1.UN2_REG_16\);
+\P1.UN2_REG_15_Z93\: CFG4 
+generic map(
+  INIT => X"8000"
+)
+port map (
+  A => REG(19),
+  B => REG(17),
+  C => REG(15),
+  D => REG(13),
+  Y => \P1.UN2_REG_15\);
+\P1.UN2_REG_14_Z94\: CFG4 
+generic map(
+  INIT => X"8000"
+)
+port map (
+  A => REG(12),
+  B => REG(9),
+  C => REG(8),
+  D => REG(7),
+  Y => \P1.UN2_REG_14\);
+\P1.UN2_REG_13_Z95\: CFG4 
+generic map(
+  INIT => X"8000"
+)
+port map (
+  A => REG(6),
+  B => REG(4),
+  C => REG(2),
+  D => REG(1),
+  Y => \P1.UN2_REG_13\);
+\P1.UN2_REG_23_Z96\: CFG4 
+generic map(
+  INIT => X"8000"
+)
+port map (
+  A => \P1.UN2_REG_14\,
+  B => \P1.UN2_REG_17\,
+  C => \P1.UN2_REG_16\,
+  D => \P1.UN2_REG_15\,
+  Y => \P1.UN2_REG_23\);
+\P1.UN2_REG_22_Z97\: CFG4 
+generic map(
+  INIT => X"1000"
+)
+port map (
+  A => REG(16),
+  B => REG(25),
+  C => \P1.UN2_REG_13\,
+  D => \P1.UN2_REG_18\,
+  Y => \P1.UN2_REG_22\);
+\REG_10[12]_Z98\: CFG3 
+generic map(
+  INIT => X"EA"
+)
+port map (
+  A => REG(11),
+  B => \P1.UN2_REG_23\,
+  C => \P1.UN2_REG_22\,
+  Y => REG_10(12));
+\REG_10[11]_Z99\: CFG3 
+generic map(
+  INIT => X"EA"
+)
+port map (
+  A => REG(10),
+  B => \P1.UN2_REG_23\,
+  C => \P1.UN2_REG_22\,
+  Y => REG_10(11));
+\REG_10[1]_Z100\: CFG4 
+generic map(
+  INIT => X"F666"
+)
+port map (
+  A => REG(25),
+  B => REG(0),
+  C => \P1.UN2_REG_22\,
+  D => \P1.UN2_REG_23\,
+  Y => REG_10(1));
+\REG_10[0]_Z101\: CFG3 
+generic map(
+  INIT => X"EA"
+)
+port map (
+  A => REG(25),
+  B => \P1.UN2_REG_23\,
+  C => \P1.UN2_REG_22\,
+  Y => REG_10(0));
+\REG_10[19]_Z102\: CFG3 
+generic map(
+  INIT => X"EA"
+)
+port map (
+  A => REG(18),
+  B => \P1.UN2_REG_23\,
+  C => \P1.UN2_REG_22\,
+  Y => REG_10(19));
+\REG_10[17]_Z103\: CFG3 
+generic map(
+  INIT => X"EA"
+)
+port map (
+  A => REG(16),
+  B => \P1.UN2_REG_23\,
+  C => \P1.UN2_REG_22\,
+  Y => REG_10(17));
+\REG_10[15]_Z104\: CFG3 
+generic map(
+  INIT => X"EA"
+)
+port map (
+  A => REG(14),
+  B => \P1.UN2_REG_23\,
+  C => \P1.UN2_REG_22\,
+  Y => REG_10(15));
+\REG_10[6]_Z105\: CFG4 
+generic map(
+  INIT => X"F666"
+)
+port map (
+  A => REG(25),
+  B => REG(5),
+  C => \P1.UN2_REG_22\,
+  D => \P1.UN2_REG_23\,
+  Y => REG_10(6));
+\REG_10[4]_Z106\: CFG3 
+generic map(
+  INIT => X"EA"
+)
+port map (
+  A => REG(3),
+  B => \P1.UN2_REG_23\,
+  C => \P1.UN2_REG_22\,
+  Y => REG_10(4));
+DFF_0_Z107: CFG3 
+generic map(
+  INIT => X"6C"
+)
+port map (
+  A => \P1.UN2_REG_22\,
+  B => LED_C,
+  C => \P1.UN2_REG_23\,
+  Y => DFF_0);
+II_GND: GND port map (
+    Y => NN_2);
+II_VCC: VCC port map (
+    Y => NN_1);
+end beh;
+

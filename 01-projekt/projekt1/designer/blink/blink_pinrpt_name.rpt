@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+-Pin Report - Date: Tue Nov  7 10:12:02 2023 Pinchecksum: NOT-AVAILABLE
+-Product: Designer
+-Release: v2023.2
+-Version: 2023.2.0.8
+-Design Name: blink
+-Family: SmartFusion2
+-Die: M2S005
+-Package: 144 TQ
+-----------------------------------------------------------------
+
+Port |Pin |Fixed |Function                 |Bank     |I/O Std   |Direction                      |I/O state in Flash*Freeze mode |Resistor Pull                      |I/O available in Flash*Freeze mode |Schmitt Trigger |Odt_Static    |Odt Imp (Ohm)  |Low Power Exit |Input Delay |Slew         |Pre-Emphasis      |Output Drive (mA) |Output Load (pF) |
+-----|----|------|-------------------------|---------|----------|-------------------------------|-------------------------------|-----------------------------------|-----------------------------------|----------------|--------------|---------------|---------------|------------|-------------|------------------|------------------|-----------------|
+clk   24   Yes    MSIOD70PB5/CCC_NE1_CLKI1  Bank5     LVCMOS25   Input                           TRISTATE                        None                                No                                  Off              ---            ---             Off             Off          ---           ---                ---                ---               
+led   50   Yes    MSIO92PB4                 Bank4     LVCMOS33   Output                          TRISTATE                        None                                No                                  ---              ---            ---             ---             ---          ---           ---                12                 5                 
+rst   53   Yes    MSIO93NB4                 Bank4     LVCMOS33   Input                           TRISTATE                        None                                No                                  Off              ---            ---             Off             Off          ---           ---                ---                ---               

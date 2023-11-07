@@ -1,0 +1,13 @@
+Software Version: 2023.2.0.8
+Opened 'C:\00digitalesysteme\01-projekt\projekt1\designer\blink\blink_fp\blink.pro'
+PDB file 'C:\00digitalesysteme\01-projekt\projekt1\designer\blink\blink.pdb' has been loaded successfully.
+DESIGN : blink;  CHECKSUM : 5D75;  PDB_VERSION : 1.9
+Info: Programming Interface selected is JTAG.
+File/Folder 'C:\00digitalesysteme\01-projekt\projekt1\designer\blink\blink.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\00digitalesysteme\01-projekt\projekt1\designer\blink\blink.ppd'; file programs Fabric.
+Fabric component bitstream digest: a7a25ff2d5af51936eed7b44892bc01eb551d6be6622569a3179c7c0bff69da7
+Entire bitstream digest: 3e9d6d288fe7b4842b540c42e0922811fa21d99a53335b0d7c5c43c881305034
+Finished: Tue Nov 07 10:24:46 2023 (Elapsed time 00:00:02)
+
+Project saved.
+Project closed.

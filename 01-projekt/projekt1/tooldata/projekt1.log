@@ -1,0 +1,16 @@
+Project Name: projekt1
+Location: C:\00digitalesysteme\01-projekt\projekt1
+Description: Yannick & Gina
+Preferred HDL Type: VHDL
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M2S005-TQ144
+Family         : SmartFusion2
+Die            : M2S005
+Package        : 144 TQ
+Speed          : STD
+Core Voltage   : 1.2
+Range          : COM
