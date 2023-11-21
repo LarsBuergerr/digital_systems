@@ -1,0 +1,373 @@
+# Reading pref.tcl
+# OpenFile Z:/digital_systems/vhdl/testbench/aufgabe1_tb.vhd
+vcom -reportprogress 300 -work work Z:/digital_systems/vhdl/aufgabe1.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 11:34:03 on Nov 21,2023
+# vcom -reportprogress 300 -work work Z:/digital_systems/vhdl/aufgabe1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity aufgabe1
+# -- Compiling architecture struktur of aufgabe1
+# End time: 11:34:03 on Nov 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 11:34:03 on Nov 21,2023
+# vcom -reportprogress 300 -work work Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# End time: 11:34:04 on Nov 21,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.aufgabe1_tb
+# vsim work.aufgabe1_tb 
+# Start time: 11:34:15 on Nov 21,2023
+# //  ModelSim Microsemi Pro 2023.1 Jan 24 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi Pro and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aufgabe1_tb(verhalten)
+# Loading work.aufgabe1(struktur)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.hex4x7seg(struktur)
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/aufgabe1_tb/hlt
+add wave -position end  sim:/aufgabe1_tb/rst
+add wave -position end  sim:/aufgabe1_tb/clk
+add wave -position end  sim:/aufgabe1_tb/sw
+add wave -position end  sim:/aufgabe1_tb/btn
+add wave -position end  sim:/aufgabe1_tb/digi
+add wave -position end  sim:/aufgabe1_tb/seg
+add wave -position end  sim:/aufgabe1_tb/dp
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cnt
+add wave -position end  sim:/aufgabe1_tb/u1/u1/N
+# Load canceled
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 12:16:25 on Nov 21,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(34): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(36): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(22): Nonresolved signal 'cnt' has multiple sources.
+#   Drivers:
+#     Z:/digital_systems/vhdl/hex4x7seg.vhd(48):Process p2
+#        Driven at:
+#           Z:/digital_systems/vhdl/hex4x7seg.vhd(51)
+#     Z:/digital_systems/vhdl/hex4x7seg.vhd(30):Process p1
+#        Driven at:
+#           Z:/digital_systems/vhdl/hex4x7seg.vhd(34)
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(71): VHDL Compiler exiting
+# End time: 12:16:26 on Nov 21,2023, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 12:20:38 on Nov 21,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(72): VHDL Compiler exiting
+# End time: 12:20:39 on Nov 21,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 12:22:06 on Nov 21,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(34): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(40): Enumeration literal '1' is not of type std.STANDARD.INTEGER.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(52): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(54): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(54): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(56): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(72): VHDL Compiler exiting
+# End time: 12:22:06 on Nov 21,2023, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 12:22:48 on Nov 21,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(51): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(51): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(72): VHDL Compiler exiting
+# End time: 12:22:48 on Nov 21,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 12:23:36 on Nov 21,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(51): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(51): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(72): VHDL Compiler exiting
+# End time: 12:23:36 on Nov 21,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 12:23:54 on Nov 21,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# End time: 12:23:54 on Nov 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.aufgabe1_tb
+# End time: 12:24:06 on Nov 21,2023, Elapsed time: 0:49:51
+# Errors: 0, Warnings: 3
+# vsim work.aufgabe1_tb 
+# Start time: 12:24:06 on Nov 21,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aufgabe1_tb(verhalten)
+# Loading work.aufgabe1(struktur)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.hex4x7seg(struktur)
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cnt
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cntMod4
+add wave -position end  sim:/aufgabe1_tb/u1/u1/enMod4
+add wave -position end  sim:/aufgabe1_tb/u1/u1/N
+add wave -position end  sim:/aufgabe1_tb/u1/u1/NMod4
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+# ** Fatal: (vsim-3421) Value 4 for cntMod4 is out of range 0 to 3.
+#    Time: 1310830 ns  Iteration: 0  Process: /aufgabe1_tb/u1/u1/p2 File: Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Fatal error in Process p2 at Z:/digital_systems/vhdl/hex4x7seg.vhd line 58
+# 
+# HDL call sequence:
+# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
+# 
+vsim work.aufgabe1_tb
+# End time: 12:36:29 on Nov 21,2023, Elapsed time: 0:12:23
+# Errors: 1, Warnings: 3
+# vsim work.aufgabe1_tb 
+# Start time: 12:36:29 on Nov 21,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aufgabe1_tb(verhalten)
+# Loading work.aufgabe1(struktur)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.hex4x7seg(struktur)
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 12:36:52 on Nov 21,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# End time: 12:36:53 on Nov 21,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hex4x7seg(struktur)
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+vsim work.aufgabe1_tb
+# End time: 12:37:19 on Nov 21,2023, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 3
+# vsim work.aufgabe1_tb 
+# Start time: 12:37:19 on Nov 21,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aufgabe1_tb(verhalten)
+# Loading work.aufgabe1(struktur)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.hex4x7seg(struktur)
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cnt
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cntMod4
+add wave -position end  sim:/aufgabe1_tb/u1/u1/enMod4
+add wave -position end  sim:/aufgabe1_tb/u1/u1/N
+add wave -position end  sim:/aufgabe1_tb/u1/u1/NMod4
+restart
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb

@@ -1,0 +1,138 @@
+m255
+K4
+z2
+!s11e vcom 2023.1 2023.01, Jan 24 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dZ:/digitalesysteme/aufgabe1/vhdl/testbench
+Eaufgabe1
+Z1 w1699350726
+Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 1
+Z4 dZ:/digital_systems/vhdl/testbench
+Z5 8Z:/digital_systems/vhdl/aufgabe1.vhd
+Z6 FZ:/digital_systems/vhdl/aufgabe1.vhd
+l0
+L5 1
+Vzo^XQ6U1I^fX7T>Qg@lEG0
+!s100 XdRhH]QJe?dgNj7VSW;V[0
+Z7 OW;C;2023.1;77
+32
+Z8 !s110 1700562843
+!i10b 1
+Z9 !s108 1700562843.000000
+Z10 !s90 -reportprogress|300|-work|work|Z:/digital_systems/vhdl/aufgabe1.vhd|
+Z11 !s107 Z:/digital_systems/vhdl/aufgabe1.vhd|
+!i113 1
+Z12 o-work work -O0
+Z13 tExplicit 1 CvgOpt 0
+Astruktur
+R2
+R3
+DEx4 work 8 aufgabe1 0 22 zo^XQ6U1I^fX7T>Qg@lEG0
+!i122 1
+l33
+L15 34
+VaRMBO9mlBCneFMmZXXoG>1
+!s100 5kbZe3jdQ88mX^zDdljnl0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eaufgabe1_tb
+Z14 w1699350968
+R2
+R3
+!i122 0
+R0
+Z15 8Z:/digitalesysteme/aufgabe1/vhdl/testbench/aufgabe1_tb.vhd
+Z16 FZ:/digitalesysteme/aufgabe1/vhdl/testbench/aufgabe1_tb.vhd
+l0
+L5 1
+V[QlIPU=R^2MjfQ5NfGNKh2
+!s100 >=M7iYBg<QX680LXKn>Sa2
+R7
+32
+Z17 !s110 1699434578
+!i10b 1
+Z18 !s108 1699434578.000000
+Z19 !s90 -reportprogress|300|-work|work|Z:/digitalesysteme/aufgabe1/vhdl/testbench/aufgabe1_tb.vhd|
+Z20 !s107 Z:/digitalesysteme/aufgabe1/vhdl/testbench/aufgabe1_tb.vhd|
+!i113 1
+R12
+Z21 tExplicit 1 NoCoverage 1 CvgOpt 0
+Averhalten
+R2
+R3
+DEx4 work 11 aufgabe1_tb 0 22 [QlIPU=R^2MjfQ5NfGNKh2
+!i122 0
+l34
+L9 259
+Vc4B5K8<k6O]:0F:NYLP]d1
+!s100 <3i=V@Cl<?ce=c1]zo>jL2
+R7
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R12
+R21
+Ehex4x7seg
+Z22 w1700566609
+Z23 DPx4 ieee 15 std_logic_arith 0 22 B[jVX6I8iRX2o6WYW0BB>3
+Z24 DPx4 ieee 18 std_logic_unsigned 0 22 o4hn5gYc0WVo72BSL@Ta50
+R2
+R3
+!i122 9
+R4
+Z25 8Z:/digital_systems/vhdl/hex4x7seg.vhd
+Z26 FZ:/digital_systems/vhdl/hex4x7seg.vhd
+l0
+L6 1
+V37TidH1AFD^RzbYoA8AIA0
+!s100 _T_IVoL3`30S33G>XEDZh3
+R7
+32
+Z27 !s110 1700566613
+!i10b 1
+Z28 !s108 1700566612.000000
+Z29 !s90 -reportprogress|300|-work|work|-O0|Z:/digital_systems/vhdl/hex4x7seg.vhd|
+Z30 !s107 Z:/digital_systems/vhdl/hex4x7seg.vhd|
+!i113 1
+R12
+R13
+Astruktur
+R23
+R24
+R2
+R3
+Z31 DEx4 work 9 hex4x7seg 0 22 37TidH1AFD^RzbYoA8AIA0
+!i122 9
+l27
+Z32 L17 56
+V7z;ATae9f6bGL<U2j5mSg1
+!s100 6>G:f149:GP8g5iHdCF7e2
+R7
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R12
+R13

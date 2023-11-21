@@ -1,8 +1,0 @@
-@N|Running in 64-bit mode
-@N|Running in 64-bit mode
-@N:"C:\00digitalesysteme\01-projekt\Beispiel\Beispiel5.vhd":4:7:4:11|Top entity is set to blink.
-@N: CD140 :	| Using the VHDL 2008 Standard for file 'C:\00digitalesysteme\01-projekt\Beispiel\Beispiel5.vhd'.
-@N: CD231 :"C:\Microchip\Libero_SoC_v2023.2\SynplifyPro\lib\vhd2008\std1164.vhd":889:16:889:17|Using onehot encoding for type mvl9plus. For example, enumeration 'U' is mapped to "1000000000".
-@N: CD630 :"C:\00digitalesysteme\01-projekt\Beispiel\Beispiel5.vhd":4:7:4:11|Synthesizing work.blink.verhalten.
-@N|Running in 64-bit mode
-

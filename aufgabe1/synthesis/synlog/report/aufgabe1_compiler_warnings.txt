@@ -1,0 +1,2 @@
+@W: CD286 :"Z:\digitalesysteme\digitalesysteme_bence\aufgabe1\hdl\hex4x7seg.vhd":6:7:6:15|Creating black box for empty architecture hex4x7seg 
+

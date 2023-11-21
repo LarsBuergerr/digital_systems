@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<SynplifyOutput>
-	<result>Success</result>
-	<design>blink</design>
-	<target_verilog>C:\00digitalesysteme\01-projekt\projekt1\synthesis\blink.vm</target_verilog>
-</SynplifyOutput>

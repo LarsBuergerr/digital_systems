@@ -1,1 +1,0 @@
-@W: MT530 :"c:\00digitalesysteme\01-projekt\beispiel\beispiel5.vhd":24:5:24:6|Found inferred clock blink|clk which controls 27 sequential elements including reg[25:0]. This clock has no specified timing constraint which may adversely impact design performance. 

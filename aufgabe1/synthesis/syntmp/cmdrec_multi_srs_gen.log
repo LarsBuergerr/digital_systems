@@ -1,0 +1,7 @@
+C:\Microchip\Libero_SoC_v2023.2\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.aufgabe1  -multisrs  Z:\digitalesysteme\digitalesysteme_bence\aufgabe1\synthesis\synwork\aufgabe1_comp.srs  -osyn  Z:\digitalesysteme\digitalesysteme_bence\aufgabe1\synthesis\synwork\aufgabe1_mult.srs  -log  Z:\digitalesysteme\digitalesysteme_bence\aufgabe1\synthesis\synlog\aufgabe1_multi_srs_gen.srr 
+relcom:C:\Microchip\Libero_SoC_v2023.2\SynplifyPro\bin64\syn_nfilter.exe -link -top work.aufgabe1 -multisrs ..\synwork\aufgabe1_comp.srs -osyn ..\synwork\aufgabe1_mult.srs -log ..\synlog\aufgabe1_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\aufgabe1_comp.srs|io:i|time:1700554801|size:2830|exec:0|csum:8BC97CD219509448D467B812B768424F
+file:..\synwork\aufgabe1_mult.srs|io:o|time:1700554802|size:2436|exec:0|csum:
+file:..\synlog\aufgabe1_multi_srs_gen.srr|io:o|time:1700554802|size:1151|exec:0|csum:
+file:C:\Microchip\Libero_SoC_v2023.2\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1691490330|size:10452480|exec:1|csum:C2B49D9CC1CC5913A59BA97F5F9B52BC
