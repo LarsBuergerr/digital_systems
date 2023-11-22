@@ -92,24 +92,24 @@ R20
 R12
 R21
 Ehex4x7seg
-Z22 w1700566609
+Z22 w1700646677
 Z23 DPx4 ieee 15 std_logic_arith 0 22 B[jVX6I8iRX2o6WYW0BB>3
 Z24 DPx4 ieee 18 std_logic_unsigned 0 22 o4hn5gYc0WVo72BSL@Ta50
 R2
 R3
-!i122 9
+!i122 31
 R4
 Z25 8Z:/digital_systems/vhdl/hex4x7seg.vhd
 Z26 FZ:/digital_systems/vhdl/hex4x7seg.vhd
 l0
-L6 1
-V37TidH1AFD^RzbYoA8AIA0
-!s100 _T_IVoL3`30S33G>XEDZh3
+L5 1
+V>_7R;RfIAY]bBdJ8f0F071
+!s100 :CiZ1fg;gYaBo:eNj8M?I0
 R7
 32
-Z27 !s110 1700566613
+Z27 !s110 1700646679
 !i10b 1
-Z28 !s108 1700566612.000000
+Z28 !s108 1700646679.000000
 Z29 !s90 -reportprogress|300|-work|work|-O0|Z:/digital_systems/vhdl/hex4x7seg.vhd|
 Z30 !s107 Z:/digital_systems/vhdl/hex4x7seg.vhd|
 !i113 1
@@ -120,12 +120,12 @@ R23
 R24
 R2
 R3
-Z31 DEx4 work 9 hex4x7seg 0 22 37TidH1AFD^RzbYoA8AIA0
-!i122 9
+Z31 DEx4 work 9 hex4x7seg 0 22 >_7R;RfIAY]bBdJ8f0F071
+!i122 31
 l27
-Z32 L17 56
-V7z;ATae9f6bGL<U2j5mSg1
-!s100 6>G:f149:GP8g5iHdCF7e2
+L16 92
+Vj`BVHY5`5<79R<:a7Gi;e2
+!s100 ]4FecDnW3YDfON6Seb;ZJ0
 R7
 32
 R27

@@ -1,32 +1,8 @@
 # Reading pref.tcl
 # OpenFile Z:/digital_systems/vhdl/testbench/aufgabe1_tb.vhd
-vcom -reportprogress 300 -work work Z:/digital_systems/vhdl/aufgabe1.vhd
-# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
-# Start time: 11:34:03 on Nov 21,2023
-# vcom -reportprogress 300 -work work Z:/digital_systems/vhdl/aufgabe1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity aufgabe1
-# -- Compiling architecture struktur of aufgabe1
-# End time: 11:34:03 on Nov 21,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work Z:/digital_systems/vhdl/hex4x7seg.vhd
-# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
-# Start time: 11:34:03 on Nov 21,2023
-# vcom -reportprogress 300 -work work Z:/digital_systems/vhdl/hex4x7seg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity hex4x7seg
-# -- Compiling architecture struktur of hex4x7seg
-# End time: 11:34:04 on Nov 21,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
 vsim work.aufgabe1_tb
 # vsim work.aufgabe1_tb 
-# Start time: 11:34:15 on Nov 21,2023
+# Start time: 09:09:42 on Nov 22,2023
 # //  ModelSim Microsemi Pro 2023.1 Jan 24 2023
 # //
 # //  Copyright 1991-2023 Mentor Graphics Corporation
@@ -54,41 +30,16 @@ vsim work.aufgabe1_tb
 # This port will contribute value (UUUUUUU) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
 # This port will contribute value (U) to the signal network.
-add wave -position end  sim:/aufgabe1_tb/hlt
-add wave -position end  sim:/aufgabe1_tb/rst
-add wave -position end  sim:/aufgabe1_tb/clk
-add wave -position end  sim:/aufgabe1_tb/sw
-add wave -position end  sim:/aufgabe1_tb/btn
-add wave -position end  sim:/aufgabe1_tb/digi
-add wave -position end  sim:/aufgabe1_tb/seg
-add wave -position end  sim:/aufgabe1_tb/dp
-add wave -position end  sim:/aufgabe1_tb/u1/u1/cnt
-add wave -position end  sim:/aufgabe1_tb/u1/u1/N
-# Load canceled
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
-# This port will contribute value (UUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
-# This port will contribute value (UUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
-# This port will contribute value (U) to the signal network.
 run
 # ** Note: test1...
 #    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
-run
-run
-run
-run
-run
-run
-run
-run
-run
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cnt
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cntMod4
+add wave -position end  sim:/aufgabe1_tb/u1/u1/enMod4
 run
 vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
 # Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
-# Start time: 12:16:25 on Nov 21,2023
+# Start time: 09:30:46 on Nov 22,2023
 # vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -97,23 +48,16 @@ vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity hex4x7seg
 # -- Compiling architecture struktur of hex4x7seg
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(34): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(36): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(22): Nonresolved signal 'cnt' has multiple sources.
-#   Drivers:
-#     Z:/digital_systems/vhdl/hex4x7seg.vhd(48):Process p2
-#        Driven at:
-#           Z:/digital_systems/vhdl/hex4x7seg.vhd(51)
-#     Z:/digital_systems/vhdl/hex4x7seg.vhd(30):Process p1
-#        Driven at:
-#           Z:/digital_systems/vhdl/hex4x7seg.vhd(34)
-# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(71): VHDL Compiler exiting
-# End time: 12:16:26 on Nov 21,2023, Elapsed time: 0:00:01
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(52): near "'": syntax error
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(54): near "'": syntax error
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(58): near "ELSE": (vcom-1576) expecting END.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(60): VHDL Compiler exiting
+# End time: 09:30:46 on Nov 22,2023, Elapsed time: 0:00:00
 # Errors: 3, Warnings: 0
 # C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
 vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
 # Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
-# Start time: 12:20:38 on Nov 21,2023
+# Start time: 09:32:39 on Nov 22,2023
 # vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -122,15 +66,43 @@ vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity hex4x7seg
 # -- Compiling architecture struktur of hex4x7seg
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): Integer literal 0 is not of type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(55): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(55): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(67): Illegal target for signal assignment.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(67): (vcom-1136) Unknown identifier "cc".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(67): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(68): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(69): Enumeration literal '2' is type std.STANDARD.CHARACTER; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(70): Enumeration literal '3' is type std.STANDARD.CHARACTER; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(73): (vcom-1136) Unknown identifier "cc".
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(67): (vcom-1323) Selected waveforms choice is not being checked for array length.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(68): (vcom-1323) Selected waveforms choice is not being checked for array length.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(69): (vcom-1323) Selected waveforms choice is not being checked for array length.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(70): (vcom-1323) Selected waveforms choice is not being checked for array length.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(82): VHDL Compiler exiting
+# End time: 09:32:39 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 4
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 09:33:20 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(55): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(55): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
 # ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(72): VHDL Compiler exiting
-# End time: 12:20:39 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 09:33:20 on Nov 22,2023, Elapsed time: 0:00:00
 # Errors: 2, Warnings: 0
 # C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
 vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
 # Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
-# Start time: 12:22:06 on Nov 21,2023
+# Start time: 09:33:51 on Nov 22,2023
 # vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -139,70 +111,13 @@ vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity hex4x7seg
 # -- Compiling architecture struktur of hex4x7seg
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(34): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(40): Enumeration literal '1' is not of type std.STANDARD.INTEGER.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(52): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(54): (vcom-1581) No feasible entries for infix operator '='.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(54): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(56): Enumeration literal '0' is not of type std.STANDARD.INTEGER.
-# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(72): VHDL Compiler exiting
-# End time: 12:22:06 on Nov 21,2023, Elapsed time: 0:00:00
-# Errors: 8, Warnings: 0
-# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
-vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
-# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
-# Start time: 12:22:48 on Nov 21,2023
-# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity hex4x7seg
-# -- Compiling architecture struktur of hex4x7seg
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(51): (vcom-1581) No feasible entries for infix operator '='.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(51): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(72): VHDL Compiler exiting
-# End time: 12:22:48 on Nov 21,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
-vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
-# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
-# Start time: 12:23:36 on Nov 21,2023
-# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity hex4x7seg
-# -- Compiling architecture struktur of hex4x7seg
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(51): (vcom-1581) No feasible entries for infix operator '='.
-# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(51): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(72): VHDL Compiler exiting
-# End time: 12:23:36 on Nov 21,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
-vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
-# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
-# Start time: 12:23:54 on Nov 21,2023
-# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Compiling entity hex4x7seg
-# -- Compiling architecture struktur of hex4x7seg
-# End time: 12:23:54 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 09:33:51 on Nov 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.aufgabe1_tb
-# End time: 12:24:06 on Nov 21,2023, Elapsed time: 0:49:51
+# End time: 09:34:06 on Nov 22,2023, Elapsed time: 0:24:24
 # Errors: 0, Warnings: 3
 # vsim work.aufgabe1_tb 
-# Start time: 12:24:06 on Nov 21,2023
+# Start time: 09:34:06 on Nov 22,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -217,113 +132,101 @@ vsim work.aufgabe1_tb
 # This port will contribute value (UUUUUUU) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
 # This port will contribute value (U) to the signal network.
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
 add wave -position end  sim:/aufgabe1_tb/u1/u1/cnt
 add wave -position end  sim:/aufgabe1_tb/u1/u1/cntMod4
 add wave -position end  sim:/aufgabe1_tb/u1/u1/enMod4
-add wave -position end  sim:/aufgabe1_tb/u1/u1/N
-add wave -position end  sim:/aufgabe1_tb/u1/u1/NMod4
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
-# This port will contribute value (UUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
-# This port will contribute value (UUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
-# This port will contribute value (U) to the signal network.
 run
-# ** Note: test1...
-#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+# WARNING: No extended dataflow license exists
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
-# This port will contribute value (UUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
-# This port will contribute value (UUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
-# This port will contribute value (U) to the signal network.
-run
-# ** Note: test1...
-#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
-run
-run
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
-# This port will contribute value (UUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
-# This port will contribute value (UUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
-# This port will contribute value (U) to the signal network.
-run
-# ** Note: test1...
-#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
-# ** Fatal: (vsim-3421) Value 4 for cntMod4 is out of range 0 to 3.
-#    Time: 1310830 ns  Iteration: 0  Process: /aufgabe1_tb/u1/u1/p2 File: Z:/digital_systems/vhdl/hex4x7seg.vhd
-# Fatal error in Process p2 at Z:/digital_systems/vhdl/hex4x7seg.vhd line 58
-# 
-# HDL call sequence:
-# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
-# 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
-# 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
-# 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
-# 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
-# 
-run
-# Cannot continue because of fatal error.
-# HDL call sequence:
-# Stopped at Z:/digital_systems/vhdl/hex4x7seg.vhd 58 Process p2
-# 
-vsim work.aufgabe1_tb
-# End time: 12:36:29 on Nov 21,2023, Elapsed time: 0:12:23
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 09:52:16 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(32): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(36): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(31): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(34): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(69): VHDL Compiler exiting
+# End time: 09:52:16 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 3
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 09:54:51 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(36): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(31): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(34): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(69): VHDL Compiler exiting
+# End time: 09:54:51 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 3
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 09:55:27 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(31): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(34): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(69): VHDL Compiler exiting
+# End time: 09:55:27 on Nov 22,2023, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 3
-# vsim work.aufgabe1_tb 
-# Start time: 12:36:29 on Nov 21,2023
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.aufgabe1_tb(verhalten)
-# Loading work.aufgabe1(struktur)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.hex4x7seg(struktur)
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
-# This port will contribute value (UUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
-# This port will contribute value (UUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
-# This port will contribute value (U) to the signal network.
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
 vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
 # Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
-# Start time: 12:36:52 on Nov 21,2023
+# Start time: 09:56:48 on Nov 22,2023
 # vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -332,22 +235,160 @@ vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity hex4x7seg
 # -- Compiling architecture struktur of hex4x7seg
-# End time: 12:36:53 on Nov 21,2023, Elapsed time: 0:00:01
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(31): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(34): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(69): VHDL Compiler exiting
+# End time: 09:56:48 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 3
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 09:58:28 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): (vcom-1389) OTHERS aggregate cannot be operand of operator with unconstrained array formal.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(31): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(34): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(69): VHDL Compiler exiting
+# End time: 09:58:28 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:00:37 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(21): near "SIGNAL": (vcom-1576) expecting ';'.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(33): Illegal target for signal assignment.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(33): (vcom-1136) Unknown identifier "cnt".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(36): (vcom-1136) Unknown identifier "cnt".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(36): (vcom-1136) Unknown identifier "MAX".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(36): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): Illegal target for signal assignment.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(37): (vcom-1136) Unknown identifier "cnt".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(40): Illegal target for signal assignment.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(40): (vcom-1136) Unknown identifier "cnt".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(40): (vcom-1136) Unknown identifier "cnt".
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(32): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(38): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(70): VHDL Compiler exiting
+# End time: 10:00:37 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 3
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:00:48 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(32): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Warning: Z:/digital_systems/vhdl/hex4x7seg.vhd(38): (vcom-1272) Length of expected is 2; length of actual is 1.
+# End time: 10:00:48 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:01:55 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(23): near "std_logic": (vcom-1576) expecting ':'.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(32): Illegal target for signal assignment.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(32): (vcom-1136) Unknown identifier "enMod4".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): Illegal target for signal assignment.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): (vcom-1136) Unknown identifier "enMod4".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(38): Illegal target for signal assignment.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(38): (vcom-1136) Unknown identifier "enMod4".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(53): (vcom-1136) Unknown identifier "enMod4".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(53): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(57): (vcom-1136) Unknown identifier "enMod4".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(57): Type error resolving infix expression "+" as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(70): VHDL Compiler exiting
+# End time: 10:01:55 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:02:08 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(32): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(35): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(38): String literal found where non-array type ieee.std_logic_1164.STD_LOGIC was expected.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(53): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(53): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(70): VHDL Compiler exiting
+# End time: 10:02:08 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:02:46 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(53): (vcom-1581) No feasible entries for infix operator '='.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(53): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(70): VHDL Compiler exiting
+# End time: 10:02:46 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:03:05 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# End time: 10:03:05 on Nov 22,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.hex4x7seg(struktur)
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/ena(3 downto 0) has no driver.
-# This port will contribute value (UUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
-# This port will contribute value (UUUUUUU) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
-# This port will contribute value (U) to the signal network.
 vsim work.aufgabe1_tb
-# End time: 12:37:19 on Nov 21,2023, Elapsed time: 0:00:50
+# End time: 10:03:16 on Nov 22,2023, Elapsed time: 0:29:10
 # Errors: 0, Warnings: 3
 # vsim work.aufgabe1_tb 
-# Start time: 12:37:19 on Nov 21,2023
+# Start time: 10:03:16 on Nov 22,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -365,9 +406,325 @@ vsim work.aufgabe1_tb
 add wave -position end  sim:/aufgabe1_tb/u1/u1/cnt
 add wave -position end  sim:/aufgabe1_tb/u1/u1/cntMod4
 add wave -position end  sim:/aufgabe1_tb/u1/u1/enMod4
-add wave -position end  sim:/aufgabe1_tb/u1/u1/N
-add wave -position end  sim:/aufgabe1_tb/u1/u1/NMod4
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:12:03 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# End time: 10:12:03 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.aufgabe1_tb
+# End time: 10:12:14 on Nov 22,2023, Elapsed time: 0:08:58
+# Errors: 0, Warnings: 3
+# vsim work.aufgabe1_tb 
+# Start time: 10:12:14 on Nov 22,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aufgabe1_tb(verhalten)
+# Loading work.aufgabe1(struktur)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.hex4x7seg(struktur)
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/aufgabe1_tb/u1/u1/ena
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cnt
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cntMod4
+add wave -position end  sim:/aufgabe1_tb/u1/u1/enMod4
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cc
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: test3...
+#    Time: 1310850 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1310890 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1310930 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1310970 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1311010 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638550 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638590 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638630 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638670 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966230 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966270 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966310 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966350 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2293910 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2293950 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2293990 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2294030 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: done
+#    Time: 2294030 ns  Iteration: 0  Instance: /aufgabe1_tb
+run
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:28:15 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# End time: 10:28:15 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.aufgabe1_tb
+# End time: 10:28:20 on Nov 22,2023, Elapsed time: 0:16:06
+# Errors: 16, Warnings: 2
+# vsim work.aufgabe1_tb 
+# Start time: 10:28:20 on Nov 22,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aufgabe1_tb(verhalten)
+# Loading work.aufgabe1(struktur)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.hex4x7seg(struktur)
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+add wave -position end  sim:/aufgabe1_tb/u1/u1/dp
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cnt
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cntMod4
+add wave -position end  sim:/aufgabe1_tb/u1/u1/enMod4
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cc
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: test3...
+#    Time: 1310850 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1310890 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1310930 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1310970 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1311010 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638550 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638590 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638630 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638670 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966230 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966270 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966310 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966350 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2293910 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2293950 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2293990 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2294030 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: done
+#    Time: 2294030 ns  Iteration: 0  Instance: /aufgabe1_tb
+add wave -position end  sim:/aufgabe1_tb/u1/u1/dpin
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1_tb/u1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: test3...
+#    Time: 1310850 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1310890 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1310930 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1310970 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1311010 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638550 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638590 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638630 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1638670 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966230 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966270 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966310 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 1966350 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2293910 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2293950 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2293990 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Error: wrong segment
+#    Time: 2294030 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: done
+#    Time: 2294030 ns  Iteration: 0  Instance: /aufgabe1_tb
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:49:27 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(74): Illegal target for signal assignment.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(74): (vcom-1136) Unknown identifier "selected_segment".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(75): near "data": (vcom-1576) expecting ';' or ','.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(80): (vcom-1136) Unknown identifier "selected_segment".
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(80): near "WHEN": (vcom-1576) expecting SELECT.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(104): VHDL Compiler exiting
+# End time: 10:49:27 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:49:57 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(75): near "data": (vcom-1576) expecting ';' or ','.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(80): near "WHEN": (vcom-1576) expecting SELECT.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(106): VHDL Compiler exiting
+# End time: 10:49:57 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:50:58 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(75): near "data": (vcom-1576) expecting ';' or ','.
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(82): near "0000110": (vcom-1576) expecting ';' or ','.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(107): VHDL Compiler exiting
+# End time: 10:50:58 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:51:08 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# ** Error: Z:/digital_systems/vhdl/hex4x7seg.vhd(82): near "0000110": (vcom-1576) expecting ';' or ','.
+# ** Note: Z:/digital_systems/vhdl/hex4x7seg.vhd(107): VHDL Compiler exiting
+# End time: 10:51:09 on Nov 22,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# C:/Microchip/Libero_SoC_v2023.2/ModelSimPro/win32acoem/vcom failed.
+vcom -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:51:19 on Nov 22,2023
+# vcom -reportprogress 300 -work work -O0 Z:/digital_systems/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity hex4x7seg
+# -- Compiling architecture struktur of hex4x7seg
+# End time: 10:51:19 on Nov 22,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.hex4x7seg(struktur)
+vsim work.aufgabe1_tb
+# End time: 10:51:41 on Nov 22,2023, Elapsed time: 0:23:21
+# Errors: 0, Warnings: 0
+# vsim work.aufgabe1_tb 
+# Start time: 10:51:41 on Nov 22,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aufgabe1_tb(verhalten)
+# Loading work.aufgabe1(struktur)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.hex4x7seg(struktur)
+add wave -position end  sim:/aufgabe1_tb/u1/u1/selected_seg
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cntMod4
+run
+# ** Note: test1...
+#    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: test3...
+#    Time: 1310850 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: done
+#    Time: 2294030 ns  Iteration: 0  Instance: /aufgabe1_tb
+run
+add wave -position end  sim:/aufgabe1_tb/u1/u1/cc
 restart
 run
 # ** Note: test1...
 #    Time: 0 ps  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: test3...
+#    Time: 1310850 ns  Iteration: 0  Instance: /aufgabe1_tb
+# ** Note: done
+#    Time: 2294030 ns  Iteration: 0  Instance: /aufgabe1_tb
