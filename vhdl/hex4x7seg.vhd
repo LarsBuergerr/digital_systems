@@ -38,7 +38,7 @@ BEGIN
             cnt <= (OTHERS => '0');
             enMod4 <= '1';
          ELSE
-            cnt <= cnt + "1";
+            cnt <= cnt + 1;
          END IF;
       END IF;
    END PROCESS;
@@ -64,8 +64,7 @@ BEGIN
       cc <=    "0001" WHEN "00",
                "0010" WHEN "01",
                "0100" WHEN "10",
-               "1000" WHEN "11",
-               "1111" WHEN OTHERS;
+               "1000" WHEN OTHERS;
       ena <= cc   WHEN rst/=RSTDEF
                   ELSE (OTHERS => '0');
 
