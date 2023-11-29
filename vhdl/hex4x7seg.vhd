@@ -1,6 +1,7 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.std_logic_unsigned.ALL;
+USE work.lfsr_lib.ALL;
 
 ENTITY hex4x7seg IS
    GENERIC(RSTDEF: std_logic := '0');
@@ -14,10 +15,13 @@ ENTITY hex4x7seg IS
 END hex4x7seg;
 
 ARCHITECTURE struktur OF hex4x7seg IS
+-- CONSTANT POLY: std_logic_vector := "10000010100011";
+
+-- CONSTANT MAX: std_logic_vector := exec(POLY, 2**14);
 
 CONSTANT MAX: std_logic_vector := "11111111111111";
 
-SIGNAL     cnt: std_logic_vector (0 TO 13);
+SIGNAL     cnt: std_logic_vector (13 DOWNTO 0);
 SIGNAL cntMod4: std_logic_vector (0 TO 1);
 SIGNAL  enMod4: std_logic;
 
@@ -26,20 +30,41 @@ SIGNAL selected_seg: std_logic_vector(3 DOWNTO 0);
 
 BEGIN
 
-   -- Modulo-2**14-Zaehler
+   -- -- Modulo-2**14-Zaehler
+   -- p1: PROCESS (rst, clk) IS
+   -- BEGIN
+   --    IF rst=RSTDEF THEN
+   --       enMod4 <= '0';
+   --       cnt <= (OTHERS => '0');
+   --    ELSIF rising_edge(clk) THEN
+   --       enMod4 <= '0';
+   --       IF cnt= MAX THEN
+   --          cnt <= (OTHERS => '0');
+   --          enMod4 <= '1';
+   --       ELSE
+   --          cnt <= cnt + 1;
+   --       END IF;
+   --    END IF;
+   -- END PROCESS;
+
    p1: PROCESS (rst, clk) IS
    BEGIN
       IF rst=RSTDEF THEN
          enMod4 <= '0';
-         cnt <= (OTHERS => '0');
+         cnt <= (OTHERS => '1');
       ELSIF rising_edge(clk) THEN
          enMod4 <= '0';
          IF cnt= MAX THEN
-            cnt <= (OTHERS => '0');
             enMod4 <= '1';
-         ELSE
-            cnt <= cnt + 1;
          END IF;
+
+         cnt(13 DOWNTO 9)    <= cnt(12 DOWNTO 8);
+         cnt(8)              <= cnt(7) XOR cnt(13);
+         cnt(7)              <= cnt(6);
+         cnt(6)              <= cnt(5) XOR cnt(13);
+         cnt(5 DOWNTO 2)     <= cnt(4 DOWNTO 1);
+         cnt(1)              <= cnt(0) XOR cnt(13);
+         cnt(0)              <= cnt(13);
       END IF;
    END PROCESS;
 
