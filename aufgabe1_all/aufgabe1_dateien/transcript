@@ -1,0 +1,33 @@
+# Reading pref.tcl
+# OpenFile Z:/digital_systems/aufgabe1_all/aufgabe1_dateien/hex4x7seg.vhd
+vsim work.aufgabe1
+# vsim work.aufgabe1 
+# Start time: 10:54:18 on Dec 19,2023
+# //  ModelSim Microsemi Pro 2023.1 Jan 24 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi Pro and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aufgabe1(struktur)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.hex4x7seg(struktur)
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1/u1/ena(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1/u1/seg(7 downto 1) has no driver.
+# This port will contribute value (UUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /aufgabe1/u1/dp has no driver.
+# This port will contribute value (U) to the signal network.
+# End time: 10:54:29 on Dec 19,2023, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 3

@@ -1,0 +1,186 @@
+m255
+K4
+z2
+!s11e vcom 2023.1 2023.01, Jan 24 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dZ:/digital_systems/aufgabe2_all/vhdl/testbench
+Eaufgabe2
+Z1 w1702977483
+Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 23
+R0
+Z4 8Z:/digital_systems/aufgabe2_all/vhdl/aufgabe2.vhd
+Z5 FZ:/digital_systems/aufgabe2_all/vhdl/aufgabe2.vhd
+l0
+L5 1
+VDZ??G`Iz@mG=cjg?g6dIU3
+!s100 e<<;U5TaZMcJN?5VBAc[h3
+Z6 OW;C;2023.1;77
+32
+Z7 !s110 1703062686
+!i10b 1
+Z8 !s108 1703062686.000000
+Z9 !s90 -reportprogress|300|-work|work|-O0|Z:/digital_systems/aufgabe2_all/vhdl/aufgabe2.vhd|
+Z10 !s107 Z:/digital_systems/aufgabe2_all/vhdl/aufgabe2.vhd|
+!i113 1
+Z11 o-work work -O0
+Z12 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+Z13 DEx4 work 8 aufgabe2 0 22 DZ??G`Iz@mG=cjg?g6dIU3
+!i122 23
+l72
+Z14 L17 101
+Z15 VOJcJj^CUEM88O=LhXT]IO3
+Z16 !s100 8f;?YE[@8EQZNh5]GNUJJ2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Estd_counter
+Z17 w1703062678
+Z18 DPx4 ieee 15 std_logic_arith 0 22 B[jVX6I8iRX2o6WYW0BB>3
+Z19 DPx4 ieee 18 std_logic_unsigned 0 22 o4hn5gYc0WVo72BSL@Ta50
+R2
+R3
+!i122 22
+R0
+Z20 8Z:/digital_systems/aufgabe2_all/vhdl/std_counter.vhd
+Z21 FZ:/digital_systems/aufgabe2_all/vhdl/std_counter.vhd
+l0
+L6 1
+V7lbE><ac^ahj<EH7ofj[T3
+!s100 SloV4g<zlXh=z3D?Jcz`l2
+R6
+32
+Z22 !s110 1703062682
+!i10b 1
+Z23 !s108 1703062682.000000
+Z24 !s90 -reportprogress|300|-work|work|-O0|Z:/digital_systems/aufgabe2_all/vhdl/std_counter.vhd|
+Z25 !s107 Z:/digital_systems/aufgabe2_all/vhdl/std_counter.vhd|
+!i113 1
+R11
+R12
+Astruktur
+R18
+R19
+R2
+R3
+DEx4 work 11 std_counter 0 22 7lbE><ac^ahj<EH7ofj[T3
+!i122 22
+l48
+L46 6
+V@Bhm>4jI5MVC9Y3WHQM<80
+!s100 ZKPD<TR8A6C^EV8MOfe>T3
+R6
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Estd_counter_tb
+R1
+!i122 18
+R0
+Z26 8Z:/digital_systems/aufgabe2_all/vhdl/testbench/std_counter_tb.vhd
+Z27 FZ:/digital_systems/aufgabe2_all/vhdl/testbench/std_counter_tb.vhd
+l0
+L1 1
+Vaa1^YNndM?Dc9Bc2Vaak03
+!s100 glQ2m01jLj04hdSb`dMFI3
+R6
+32
+Z28 !s110 1703062600
+!i10b 1
+Z29 !s108 1703062600.000000
+Z30 !s90 -reportprogress|300|-work|work|Z:/digital_systems/aufgabe2_all/vhdl/testbench/std_counter_tb.vhd|
+Z31 !s107 Z:/digital_systems/aufgabe2_all/vhdl/testbench/std_counter_tb.vhd|
+!i113 1
+R11
+R12
+Averhalten
+DEx4 work 14 std_counter_tb 0 22 aa1^YNndM?Dc9Bc2Vaak03
+R18
+R19
+R3
+R2
+!i122 18
+l127
+L11 185
+Vh>bDcfN4___c:K2k3lPc<2
+!s100 AilKIGgI<XZzUW@?[_9ZT1
+R6
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R11
+R12
+Esync_buffer
+R1
+R18
+R19
+R2
+R3
+!i122 19
+R0
+8Z:/digital_systems/aufgabe2_all/vhdl/sync_buffer.vhd
+FZ:/digital_systems/aufgabe2_all/vhdl/sync_buffer.vhd
+l0
+L6 1
+V7OMU0_mUmbo7aW9i`YIO10
+!s100 Oh9geW8gLPJanTl=k[0zQ3
+R6
+32
+!s110 1703062639
+!i10b 1
+!s108 1703062639.000000
+!s90 -reportprogress|300|-work|work|-O0|Z:/digital_systems/aufgabe2_all/vhdl/sync_buffer.vhd|
+!s107 Z:/digital_systems/aufgabe2_all/vhdl/sync_buffer.vhd|
+!i113 1
+R11
+R12
+Esync_module
+R1
+R18
+R19
+R2
+R3
+!i122 20
+R0
+8Z:/digital_systems/aufgabe2_all/vhdl/sync_module.vhd
+FZ:/digital_systems/aufgabe2_all/vhdl/sync_module.vhd
+l0
+L6 1
+VX1[Z;043W_2m2QBfMeX=J2
+!s100 =gAJ]<HKI6fOgkkh<QZcR1
+R6
+32
+!s110 1703062642
+!i10b 1
+!s108 1703062642.000000
+!s90 -reportprogress|300|-work|work|-O0|Z:/digital_systems/aufgabe2_all/vhdl/sync_module.vhd|
+!s107 Z:/digital_systems/aufgabe2_all/vhdl/sync_module.vhd|
+!i113 1
+R11
+R12

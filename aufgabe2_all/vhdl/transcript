@@ -1,0 +1,103 @@
+# Reading pref.tcl
+# OpenFile Z:/digital_systems/aufgabe2_all/vhdl/aufgabe2.vhd
+vlib work
+vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/aufgabe2.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:57:45 on Dec 19,2023
+# vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/aufgabe2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity aufgabe2
+# -- Compiling architecture structure of aufgabe2
+# End time: 10:57:45 on Dec 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/hex4x7seg.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:57:45 on Dec 19,2023
+# vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/hex4x7seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# ** Error: (vcom-11) Could not find work.lfsr_lib.
+# ** Error (suppressible): Z:/digital_systems/aufgabe2_all/vhdl/hex4x7seg.vhd(4): (vcom-1195) Cannot find expanded name "work.lfsr_lib".
+# ** Error: Z:/digital_systems/aufgabe2_all/vhdl/hex4x7seg.vhd(4): Unknown expanded name.
+# ** Note: Z:/digital_systems/aufgabe2_all/vhdl/hex4x7seg.vhd(6): VHDL Compiler exiting
+# End time: 10:57:45 on Dec 19,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/std_counter.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:57:45 on Dec 19,2023
+# vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/std_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity std_counter
+# End time: 10:57:45 on Dec 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/sync_buffer.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:57:45 on Dec 19,2023
+# vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/sync_buffer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sync_buffer
+# End time: 10:57:45 on Dec 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/sync_module.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:57:45 on Dec 19,2023
+# vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/sync_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sync_module
+# End time: 10:57:46 on Dec 19,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/testbench/std_counter_tb.vhd
+# Model Technology ModelSim Microsemi Pro vcom 2023.1 Compiler 2023.01 Jan 24 2023
+# Start time: 10:57:54 on Dec 19,2023
+# vcom -reportprogress 300 -work work Z:/digital_systems/aufgabe2_all/vhdl/testbench/std_counter_tb.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity std_counter_tb
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling architecture verhalten of std_counter_tb
+# End time: 10:57:54 on Dec 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.aufgabe2
+# vsim work.aufgabe2 
+# Start time: 10:57:57 on Dec 19,2023
+# //  ModelSim Microsemi Pro 2023.1 Jan 24 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi Pro and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.aufgabe2(structure)
+# ** Error: (vsim-3173) Entity 'Z:/digital_systems/aufgabe2_all/vhdl/work.sync_module' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 10:57:57 on Dec 19,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
