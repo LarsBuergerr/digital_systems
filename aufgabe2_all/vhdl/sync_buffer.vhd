@@ -57,4 +57,52 @@ BEGIN
         END IF;
     END PROCESS flipFlop2;
 
+    -- Hysteresis
+    hysteresis: PROCESS(clk, rst) IS
+    BEGIN
+        IF rst=RSTDEF THEN
+            state   <= S0;
+            qH      <= '0';
+            cnt     <= 0;
+            --reg <= (OTHERS => '1');
+        ELSIF rising_edge(clk) THEN
+            IF en = '1' THEN
+                CASE state IS
+                    WHEN S0 =>
+                        qH <= '0';
+                        IF q2 = '1' THEN
+                            IF cnt < 31 THEN
+                                cnt <= cnt + 1;
+                            ELSE
+                                state <= S1;
+                            END IF;
+                        ELSE
+                            IF cnt > 0 THEN
+                                cnt <= cnt - 1;
+                            END IF;
+                        END IF;
+                    WHEN S1 =>
+                        qH <= '1';
+                        IF q2 = '1' THEN
+                            IF cnt < 31 THEN
+                                cnt <= cnt + 1;
+                            END IF;
+                        ELSE
+                            IF cnt > 0 THEN
+                                cnt <= cnt - 1;
+                            ELSE
+                                state <= S0;
+                            END IF;
+                        END IF;
+                END CASE;
+            END IF;
+            
+            IF swrst = RSTDEF THEN
+                state   <= S0;
+                qH      <= '0';
+                cnt     <= 0;
+            END IF;
+        END IF;
+    END PROCESS hysteresis;
+
 END verhalten;
