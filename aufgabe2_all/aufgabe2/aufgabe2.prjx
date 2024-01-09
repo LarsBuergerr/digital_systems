@@ -64,18 +64,18 @@ SIZE="3461"
 ENDFILE
 VALUE "Z:\digital_systems\aufgabe2_all\vhdl\std_counter.vhd,hdl"
 STATE="utd"
-TIME="1702977483"
-SIZE="1705"
+TIME="1704791435"
+SIZE="3424"
 ENDFILE
 VALUE "Z:\digital_systems\aufgabe2_all\vhdl\sync_buffer.vhd,hdl"
 STATE="utd"
-TIME="1702977483"
-SIZE="757"
+TIME="1704791139"
+SIZE="4058"
 ENDFILE
 VALUE "Z:\digital_systems\aufgabe2_all\vhdl\sync_module.vhd,hdl"
 STATE="utd"
-TIME="1702977483"
-SIZE="799"
+TIME="1704791458"
+SIZE="3898"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -203,11 +203,12 @@ SUBBLOCK "hex4x7seg::work","Z:\digital_systems\aufgabe2_all\vhdl\hex4x7seg.vhd",
 ENDLIST
 LIST "std_counter::work","Z:\digital_systems\aufgabe2_all\vhdl\std_counter.vhd","FALSE","FALSE"
 ENDLIST
+LIST "sync_buffer::work","Z:\digital_systems\aufgabe2_all\vhdl\sync_buffer.vhd","FALSE","FALSE"
+ENDLIST
 LIST "sync_module::work","Z:\digital_systems\aufgabe2_all\vhdl\sync_module.vhd","FALSE","FALSE"
+SUBBLOCK "sync_buffer::work","Z:\digital_systems\aufgabe2_all\vhdl\sync_buffer.vhd","FALSE","FALSE"
 ENDLIST
 LIST "hex4x7seg::work","Z:\digital_systems\aufgabe2_all\vhdl\hex4x7seg.vhd","FALSE","FALSE"
-ENDLIST
-LIST "sync_buffer::work","Z:\digital_systems\aufgabe2_all\vhdl\sync_buffer.vhd","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList

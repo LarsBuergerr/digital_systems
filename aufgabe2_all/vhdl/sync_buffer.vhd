@@ -31,6 +31,7 @@ ARCHITECTURE verhalten OF sync_buffer IS
     SIGNAL cnt: integer range 0 to 31; 
 
 BEGIN
+
     -- First D-flip Flowp realised with the 1-Process Method
     flipFlop1: PROCESS(clk, rst) IS
     BEGIN
@@ -104,5 +105,24 @@ BEGIN
             END IF;
         END IF;
     END PROCESS hysteresis;
+
+    -- Third D-flip Flowp realised with the 1-Process Method
+    flipFlop3: PROCESS(clk, rst) IS
+    BEGIN
+        IF rst=RSTDEF THEN
+            q3 <= '0';
+        ELSIF rising_edge(clk) THEN
+            q3 <= qH;
+            IF swrst = RSTDEF THEN
+                q3 <= '0';
+            END IF;
+        END IF;
+    END PROCESS flipFlop3;
+    
+    -- Set Output of sync_buffer
+    -- See circuit diagram in task description
+    fedge   <= NOT qH AND q3;
+    dout    <= q3;
+    redge   <= qH AND NOT q3;
 
 END verhalten;
